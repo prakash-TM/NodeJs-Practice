@@ -40,21 +40,7 @@ app.post("/register-user", (req, res) => {
     res.json(response);
 });
 
-app.delete("/user", (req, res) => {
-    res.send("I am a delete request");
-});
 
-app.get("/user", (req, res) => {
-    res.send("I am a Get User");
-});
-
-app.post("/user", (req, res) => {
-    res.send("I am a create User");
-});
-
-app.put("/user", (req, res) => {
-    res.send("I'm a put request");
-});
 
 app.get("/fly", (req, res) => {
     const { name } = req.query;
