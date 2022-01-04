@@ -1,5 +1,5 @@
 const express = require("express");
-const indexRoute = require("./routes");
+const route = require("./routes");
 const rateLimit = require("express-rate-limit");
 const app = express();
 const port = 5000;
@@ -13,7 +13,7 @@ app.use(
     })
 );
 
-app.use("/posts", indexRoute);
+app.use("/data", route);
 
 app.listen(port, () => {
     console.log(`Current port is http://localhost:${port}`);
